@@ -1,11 +1,14 @@
+<?php
+include('php/config.inc.php');
+include('php/connexion.inc.php');
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title></title>
 	<meta charset="utf-8"/>
-	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
 </head>
 	<body>
-
 	</body>
 </html>
