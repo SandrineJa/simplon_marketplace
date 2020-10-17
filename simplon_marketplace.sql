@@ -10,8 +10,6 @@
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
-CREATE DATABASE simplon_marketplace;
-
 -- --------------------------------------------------------
 
 --
@@ -40,7 +38,7 @@ CREATE TABLE `categories` (
 
 CREATE TABLE `categories_products` (
   `category_name` varchar(255) NOT NULL,
-  `code_ean_13` int(11) NOT NULL
+  `code_ean_13` bigint NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -50,7 +48,7 @@ CREATE TABLE `categories_products` (
 --
 
 CREATE TABLE `products` (
-  `code_ean_13` int(11) NOT NULL,
+  `code_ean_13` bigint NOT NULL,
   `product_name` varchar(255) DEFAULT NULL,
   `short_description` varchar(255) DEFAULT NULL,
   `long_description` varchar(255) DEFAULT NULL,
@@ -65,7 +63,7 @@ CREATE TABLE `products` (
 
 CREATE TABLE `products_sellers` (
   `id_seller` int(11) NOT NULL,
-  `code_ean_13` int(11) NOT NULL,
+  `code_ean_13` bigint NOT NULL,
   `price_ht` float DEFAULT NULL,
   `shipping_ht` float DEFAULT NULL,
   `stock` int(11) DEFAULT NULL
