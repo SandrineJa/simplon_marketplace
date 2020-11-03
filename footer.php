@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-	<meta charset="utf-8"/>
-	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
-</head>
-	<body>
 
+<body>
 	<div class="footer">
-         <p>Footer</p>
+        <p>Footer</p>
     </div>
-
-	</body>
+</body>
 </html>

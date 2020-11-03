@@ -1,7 +1,7 @@
 <?php
 
 $dbUser = 'root';
-$dbPass = 'root';
+$dbPass = '';
 $dbDatabase = 'simplon_marketplace';
 $dbHost = 'localhost';
 
