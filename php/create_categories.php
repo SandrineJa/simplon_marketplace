@@ -23,27 +23,28 @@ $root_path = "../"; ?>
     <form action="create_categories.php" method="POST">
         <input type="text" name="category" placeholder="Nom de la catégorie">
         <input type="submit" value="Valider"/>
-        <a href="index_categories.php" title="retour">Retour</a>
     </form>
 
-    <?php
+    <?php    
     if (!empty($_POST['category'])) {
 
-        //creates a query that adds the entered value in the category table
-        $add_query = "INSERT INTO categories VALUES ('".$_POST['category']."')"; 
+        //query that adds the entered value in the category table
+        $add_query = "INSERT INTO categories VALUES ('".$_POST['category']."')";
 
-        //confirmation message
-        if ($result = $mysqli->query($add_query)) { ?>
+        //displays a confirmation message if the query is executed
+        if ($mysqli->query($add_query)) { ?>
             <p>La catégorie "<?php echo $_POST['category'] ?>" a bien été ajoutée, cliquez sur "retour" pour voir la nouvelle liste de catégories.</p>
         <?php
         }
 
-        //error message
+        //displays an error message if the query isn't executed
         else { ?>
             <p>Une erreur est survenue.</p>
         <?php
         }
     } ?>
+
+    <a href="index_categories.php" title="retour">Retour</a>
 
     <?php include('../footer.php'); ?>
 </body>
