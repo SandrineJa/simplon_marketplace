@@ -27,12 +27,12 @@ $result = $mysqli->query($category_query); ?>
 	<a href="create_categories.php">Créer une nouvelle catégorie</a>
 
 	<?php
-	//creates a div for each object in the table with delete/modify/visualize links
+	//creates a div for each object in the table containing its name and delete/update/read links
 	while ($row = $result->fetch_object()) { ?>
 		<div>
 			<?php echo $row->category_name ?>
-			<a href="index_categories.php">Supprimer</a>
-			<a href="">Modifier</a>
+			<a href="delete_categories.php?category=<?php echo $row->category_name ?>">Supprimer</a>
+			<a href="update_categories.php?category=<?php echo $row->category_name ?>">Modifier</a>
 			<a href="">Visualiser</a>
 		</div>
 	<?php
