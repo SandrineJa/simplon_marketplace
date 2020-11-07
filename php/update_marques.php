@@ -2,6 +2,9 @@
 include('config.inc_albane.php'); 
 include('connexion.inc_albane.php');
 
+//determines the path to the root from the actual file
+$root_path = "../";
+
 //$_REQUEST = permet d'avoir à la fois le $_GET  et le $_POST
 if(!empty($_REQUEST['brand_name'])) :
     $brandName = $_REQUEST['brand_name'];
@@ -37,6 +40,11 @@ endif;
 <html>
     <head>
         <title>Simplon Marketplace</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo $root_path ?>css/style.css"/>
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <?php include('../header.php'); ?>
     </head>
     <body>
         <h1>Marques</h1>
