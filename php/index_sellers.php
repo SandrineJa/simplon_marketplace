@@ -24,7 +24,7 @@ include('connexion.inc.php');
 <div>
     <?php echo $donnees->seller_name; ?>
 <a href='delete_sellers.php?seller_name=<?php echo $donnees->seller_name ; ?>' title= 'Supprimer'>Supprimer</a>
-<a href='update_sellers.php?seller_name=<?php echo $donnees->seller_name ; ?>' title= 'Modifier'>Modifier</a>
+<a href='update_sellers.php?id_seller=<?php echo $donnees->id_seller ; ?>' title= 'Modifier'>Modifier</a>
 <a href='read_sellers.php?seller_name=<?php echo $donnees->seller_name ; ?>' title= 'Visualiser'>Visualiser</a>
 </div>
 

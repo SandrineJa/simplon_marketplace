@@ -12,8 +12,7 @@ if(!empty($_POST['brand_name'])):
     $maRequete = "UPDATE brands SET
     brand_name = '".$_POST['brandmodif']."'
     WHERE brand_name = '$brandName' ";
-    var_dump($_POST['brandmodif']);
-echo $maRequete;
+    
     if($result = $mysqli->query($maRequete)):
     $message = "La marque a été modifiée avec succès";
     else :
