@@ -36,6 +36,10 @@ body {
   width: 10%;
   margin-top: 1%;
 }
+
+#cart {
+}
+
 .search{
   position: absolute;
   left:  15%;
