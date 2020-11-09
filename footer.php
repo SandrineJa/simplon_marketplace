@@ -12,6 +12,7 @@
 	    <a href="<?php echo $root_path ?>php/index_marques.php">Marques</a>
 	    <a href="<?php echo $root_path ?>php/index_sellers.php">Vendeurs</a>
 	    <a href="<?php echo $root_path ?>php/index_categories.php">Catégories</a>
+        <a href="<?php echo $root_path ?>php/index_products.php">Produits</a>
     </div>
 </body>
 </html>
