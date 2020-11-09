@@ -68,7 +68,6 @@ body {
  width: 100%;
 }
 
-
 .footer {
   position: fixed;
   left: 0;
@@ -79,6 +78,15 @@ body {
   text-align: center;
 }
 
+<<<<<<< HEAD
+#background {
+  background-color: #ffffff;
+  height: 37px;
+  width: 43px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+=======
 .create{
   border: solid 2px #000000;
 }
@@ -89,3 +97,4 @@ a{
 a:hover{
   color: #ce0033;
 }
+>>>>>>> 21098f9311439b26d960393158ce8a69411b164c
