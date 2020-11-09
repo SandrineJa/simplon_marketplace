@@ -43,4 +43,5 @@ endif;
             <p><?php echo $message;?></p>
         <?php
         endif;
-        ?><a href="index_marques.php" title="retour">retour</a>
+        ?>
+        <a href="index_marques.php" title="retour">retour</a>

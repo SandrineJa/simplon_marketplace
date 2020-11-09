@@ -78,3 +78,14 @@ body {
   color: white;
   text-align: center;
 }
+
+.create{
+  border: solid 2px #000000;
+}
+
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: #ce0033;
+}
