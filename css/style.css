@@ -37,7 +37,10 @@ body {
   margin-top: 1%;
 }
 
-#cart {
+.cart {
+  float: right;
+  margin-right: 15vw;
+  margin-top: 1.5vw;
 }
 
 .search{
