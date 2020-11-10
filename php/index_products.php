@@ -33,7 +33,7 @@ $result = $mysqli->query($products_query); ?>
 			<?php echo $row->products_name ?>
 			<a href="delete_products.php?product_name=<?php echo $row->product_name ;?>">Supprimer</a>
 			<a href="update_products.php?product_name=<?php echo $row->product_name ;?>">Modifier</a>
-			<a href="read_product.php?product_name=<?php echo $row->product_name ; ?>"title= 'Visualiser'> Visualiser</a>
+			<a href="read_products.php?product_name=<?php echo $row->product_name ; ?>"title= 'Visualiser'> Visualiser</a>
 		</div>
 	<?php
 	} ?>
