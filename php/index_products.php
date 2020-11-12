@@ -30,7 +30,7 @@ $result = $mysqli->query($products_query); ?>
 	//creates a div for each object in the table containing its name and delete/update/read links
 	while ($row = $result->fetch_object()) { ?>
 		<div>
-			<?php echo $row->products_name ?>
+			<?php echo $row->product_name ?>
 			<a href="delete_products.php?product_name=<?php echo $row->product_name ;?>">Supprimer</a>
 			<a href="update_products.php?product_name=<?php echo $row->product_name ;?>">Modifier</a>
 			<a href="read_products.php?product_name=<?php echo $row->product_name ; ?>"title= 'Visualiser'> Visualiser</a>
