@@ -1,6 +1,8 @@
 <?php 
 include('config.inc.php'); 
 include('connexion.inc.php');
+//determines the path to the root from the actual file
+$root_path = "../";
 
 
 
@@ -40,6 +42,11 @@ endif;
 <html>
     <head>
         <title>Simplon Marketplace</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo $root_path ?>css/style.css"/>
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <?php include('../header.php'); ?>
     </head>
     <body>
         <h1>Vendeurs</h1>
@@ -64,5 +71,7 @@ endif;
  <input type="submit" value="valider"/>
             <a href="index_sellers.php" title="retour">retour</a>
         </form>
+        <?php include('../footer.php'); ?>
+
     </body>
 </html>

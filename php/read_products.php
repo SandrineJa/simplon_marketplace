@@ -49,3 +49,7 @@ if ($result = $mysqli->query($maRequete)) :
     endwhile;
 endif;
 ?>
+
+<?php include('../footer.php'); ?>
+</body>
+</html>

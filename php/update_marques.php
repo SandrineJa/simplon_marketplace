@@ -73,5 +73,6 @@ endif;
              <input type="submit" value="valider"/>
             <a href="index_marques.php" title="retour">retour</a>
         </form>
+        <?php include('../footer.php'); ?>
     </body>
 </html>

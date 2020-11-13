@@ -36,5 +36,6 @@ endwhile;
 endif;
 
     $result->close();?>
+<?php include('../footer.php'); ?>
 </body>
 </html>

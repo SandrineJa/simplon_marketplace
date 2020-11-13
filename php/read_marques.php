@@ -42,4 +42,6 @@ endif;
 ?>
 <!-- faire un lien vers product -->
 
-
+<?php include('../footer.php'); ?>
+</body>
+</html>

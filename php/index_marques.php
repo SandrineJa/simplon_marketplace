@@ -50,5 +50,7 @@ $root_path = "../";
         endif;
 
         ?>
+        <?php include('../footer.php'); ?>
+
     </body>
 </html>
