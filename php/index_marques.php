@@ -19,7 +19,7 @@ $root_path = "../";
     </head>
     <body>
       
-        <h1>Marques</h1>
+        <h1>Marques :</h1>
        <div> <a class='create' href="create_marques.php">Ajouter une marque</a> </div>
         
 

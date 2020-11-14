@@ -34,14 +34,14 @@ if ($result = $mysqli->query($maRequete)) :
     while ($donnees = $result->fetch_object()) :
 ?>
 <div>
-<?php echo $donnees->product_name;?>
+<?php echo $donnees->product_name;?><a href="read_products.php?product_name=<?php echo $donnees->product_name ; ?>"title= 'Visualiser'> Visualiser</a>
 </div>
 <?php
     endwhile;
 endif;
 ?>
 <!-- faire un lien vers product -->
-
+<a href="index_marques.php" title="retour">retour</a>
 <?php include('../footer.php'); ?>
 </body>
 </html>

@@ -24,7 +24,7 @@ $result = $mysqli->query($products_query); ?>
 
 	<h1>Produits</h1>
 
-	<a href="create_products.php">Ajouter un nouveau produit</a>
+	<a class='create' href="create_products.php">Ajouter un produit</a>
 
 	<?php
 	//creates a div for each object in the table containing its name and delete/update/read links

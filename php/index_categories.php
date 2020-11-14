@@ -24,7 +24,7 @@ $result = $mysqli->query($category_query); ?>
 
 	<h1>Catégories</h1>
 
-	<a href="create_categories.php">Créer une nouvelle catégorie</a>
+	<a class='create' href="create_categories.php">Ajouter une catégorie</a>
 
 	<?php
 	//creates a div for each object in the table containing its name and delete/update/read links

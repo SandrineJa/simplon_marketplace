@@ -19,7 +19,7 @@ $root_path = "../";
     <body>
       
         <h1>Vendeurs</h1>
-       <div> <a href="create_sellers.php">Ajouter le nom du vendeur</a> </div>
+       <div> <a class='create' href="create_sellers.php">Ajouter un vendeur</a> </div>
         
 
 <?php
