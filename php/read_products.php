@@ -37,6 +37,7 @@ endif;
 if ($result = $mysqli->query($maRequete)) : 
     while ($donnees = $result->fetch_object()) :
 ?>
+<div class='read_products'>
 <h2><?php echo $products;?></h2>
 <h3><?php echo $donnees->brand_name;?></h3>
 <div><?php echo $donnees->short_description;?></div>
