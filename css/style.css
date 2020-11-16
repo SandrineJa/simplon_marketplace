@@ -29,7 +29,7 @@ body {
   margin-top: 1%;
 }
 
-.logo{
+.logo {
   position: relative;
   left: 6%;
   top: 10% ;
@@ -42,7 +42,7 @@ body {
   margin-bottom: 2vh;
 }
 
-.search{
+.search {
   position: absolute;
   left:  15%;
   width: 40%;
@@ -50,7 +50,7 @@ body {
   margin-left: 10%;
 }
 
-.panier{
+.panier {
   position: absolute;
   right: 10%;
   height: 100%;
@@ -69,7 +69,7 @@ body {
   color: white;
 }
 
-.cadre{
+.cadre {
  border: 2px solid #ce0033;
  width: 100%;
 }
@@ -83,7 +83,7 @@ body {
   color: white;
   text-align: center;
 }
-.footer a{
+.footer a {
   color: #000000;
 }
 .footer a:hover{
@@ -97,7 +97,7 @@ body {
   margin-bottom: 16px;
 }
 
-.create{
+.create {
   border: solid 2px #000000;
   border-radius: 30px;
   padding: 5px;
@@ -107,7 +107,7 @@ body {
   font-weight: bold;
 }
 
-a{
+a {
   text-decoration: none;
   color: #ce0033;
   
@@ -116,10 +116,11 @@ a:hover{
   color: #525252;
 }
 
-.catalogue{
+.catalogue {
   display: flex;
 }
-.product_catalogue{
+
+.product_catalogue {
   display: grid ;
   height: 30vh;
   width: 10vw;
