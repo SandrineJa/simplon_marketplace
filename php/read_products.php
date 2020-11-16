@@ -23,27 +23,29 @@ $products = $_GET['product_name'];
 
 if(!empty($products)):
 ?>
-<h2><?php echo $products;?></h2>
+
 <?php
-$maRequete ="SELECT products.product_name, products.short_description, products.long_description, products_sellers.price_ht, products_sellers.shipping_ht, products_sellers.stock, categories_products.category_name, sellers.seller_name
+$maRequete ="SELECT products.product_name, products.short_description, products.long_description, products_sellers.price_ht, products_sellers.shipping_ht, products_sellers.stock, categories_products.category_name, sellers.seller_name, brands.brand_name
 FROM `products`
 INNER JOIN products_sellers ON products_sellers.code_ean_13 = products.code_ean_13
 INNER JOIN categories_products ON categories_products.code_ean_13 = products.code_ean_13
 INNER JOIN sellers ON products_sellers.id_seller = sellers.id_seller
+INNER JOIN brands ON brands.brand_name = products.brand_name
 WHERE product_name='$products' "  ; 
 endif;  
 
 if ($result = $mysqli->query($maRequete)) : 
     while ($donnees = $result->fetch_object()) :
 ?>
-<div>Catégories : <?php echo $donnees->category_name;?></div>
+<h2><?php echo $products;?></h2>
+<h3><?php echo $donnees->brand_name;?></h3>
 <div><?php echo $donnees->short_description;?></div>
 <div>Description : <?php echo $donnees->long_description;?></div>
-<div>Prix : <?php echo $donnees->price_ht;?>€</div>
+<div>Prix H.T : <?php echo $donnees->price_ht;?>€</div>
 <div>Frais de port : <?php echo $donnees->shipping_ht;?>€</div>
 <div>En stock : <?php echo $donnees->stock;?></div>
 <div>Vendeur : <?php echo $donnees->seller_name;?></div>
-
+<div>Catégorie(s) : <?php echo $donnees->category_name;?></div>
 
 </div>
 <?php

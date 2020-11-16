@@ -29,7 +29,7 @@ $root_path = "";
 
 <div class='product_catalogue'>
     <?php echo $donnees->product_name?><br> <?php echo $donnees->price_ht?>€
-    <a href='php/read_products.php?product_name=<?php echo $donnees->product_name ; ?>' title= 'Visualiser'> Visualiser</a>
+    <a href='php/read_products.php?product_name=<?php echo $donnees->product_name ; ?>' title= 'Visualiser'><br><br> Visualiser</a>
 </div>
  
 <?php    

@@ -14,11 +14,12 @@
 	
 	  		<!-- Navigation links (hidden by default) -->
 	  		<div id="myLinks">
-				<a href="<?php echo $root_path ?>index.php">Products</a>
-				<a href="<?php echo $root_path ?>php/index_categories.php">Categories</a>
+				<a href="<?php echo $root_path ?>index.php">Catalogue</a>
+				<a href="<?php echo $root_path ?>php/index_products.php">Produits</a>
+				<a href="<?php echo $root_path ?>php/index_categories.php">Catégories</a>
 				<a href="<?php echo $root_path ?>php/index_marques.php">Marques</a>
 				<a href="<?php echo $root_path ?>php/index_sellers.php">Vendeurs</a>
-	    		<a href="#about">About</a>
+	    		
 	  		</div>
 
 	  		<!-- Burger menu / "Bar icon" to toggle the navigation links -->
