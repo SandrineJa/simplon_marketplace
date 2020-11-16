@@ -8,7 +8,7 @@
                 <path d="M10.707 7.050l-0.707-0.707-5.657 5.657 1.414 1.414 4.243-4.242 4.243 4.242 1.414-1.414z"></path>
             </svg>
          </div>
-	    <a href="<?php echo $root_path ?>php/index_catalogue.php">Catalogue</a>
+	    <a href="<?php echo $root_path ?>index.php">Catalogue</a>
 	    <a href="<?php echo $root_path ?>php/index_marques.php">Marques</a>
 	    <a href="<?php echo $root_path ?>php/index_sellers.php">Vendeurs</a>
 	    <a href="<?php echo $root_path ?>php/index_categories.php">Catégories</a>

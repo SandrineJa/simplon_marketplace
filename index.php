@@ -16,6 +16,29 @@ $root_path = "";
 
 <body>
 	<?php include('header.php') ?>
+
+	<div class='catalogue'>
+<?php
+    $maRequete = 'SELECT products.product_name, products_sellers.price_ht FROM products 
+    INNER JOIN products_sellers ON products_sellers.code_ean_13 = products.code_ean_13 ';
+        
+    if ($result = $mysqli->query($maRequete)) : 
+        while ($donnees = $result->fetch_object()) :
+            
+?>
+
+<div class='product_catalogue'>
+    <?php echo $donnees->product_name?><br> <?php echo $donnees->price_ht?>€
+    <a href='php/read_products.php?product_name=<?php echo $donnees->product_name ; ?>' title= 'Visualiser'> Visualiser</a>
+</div>
+ 
+<?php    
+endwhile;
+endif;
+
+    $result->close();?>
+</div>  
+	
 	<?php include('footer.php') ?>	
 </body>
 </html>
