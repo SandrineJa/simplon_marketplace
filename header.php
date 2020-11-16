@@ -14,8 +14,10 @@
 	
 	  		<!-- Navigation links (hidden by default) -->
 	  		<div id="myLinks">
-	    		<a href="#news">Products</a>
-	    		<a href="<?php echo $root_path ?>php/index_categories.php">Categories</a>
+				<a href="<?php echo $root_path ?>index.php">Products</a>
+				<a href="<?php echo $root_path ?>php/index_categories.php">Categories</a>
+				<a href="<?php echo $root_path ?>php/index_marques.php">Marques</a>
+				<a href="<?php echo $root_path ?>php/index_sellers.php">Vendeurs</a>
 	    		<a href="#about">About</a>
 	  		</div>
 
@@ -28,5 +30,6 @@
 	</div>
 
 	<script src="script.js"></script>
+	<script src="../script.js"></script>
 </body>
 </html>
