@@ -33,7 +33,7 @@ $result = $mysqli->query($category_query); ?>
 			<?php echo $row->category_name ?>
 			<a href="delete_categories.php?category=<?php echo $row->category_name ?>">Supprimer</a>
 			<a href="update_categories.php?category=<?php echo $row->category_name ?>">Modifier</a>
-			<a href="">Visualiser</a>
+			<a href="read_categories.php?category=<?php echo $row->category_name ?>">Visualiser</a>
 		</div>
 	<?php
 	} ?>
