@@ -25,14 +25,15 @@ if(!empty($products)):
 ?>
 
 <?php
-$maRequete ="SELECT products.product_name, products.short_description, products.long_description, products_sellers.price_ht, products_sellers.shipping_ht, products_sellers.stock, categories_products.category_name, sellers.seller_name, brands.brand_name
+$maRequete ="SELECT products.product_name, products.short_description, products.long_description, products_sellers.price_ht, products_sellers.shipping_ht, products_sellers.stock, sellers.seller_name, brands.brand_name
 FROM `products`
 INNER JOIN products_sellers ON products_sellers.code_ean_13 = products.code_ean_13
-INNER JOIN categories_products ON categories_products.code_ean_13 = products.code_ean_13
 INNER JOIN sellers ON products_sellers.id_seller = sellers.id_seller
 INNER JOIN brands ON brands.brand_name = products.brand_name
 WHERE product_name='$products' "  ; 
 endif;  
+
+
 
 if ($result = $mysqli->query($maRequete)) : 
     while ($donnees = $result->fetch_object()) :
@@ -46,14 +47,25 @@ if ($result = $mysqli->query($maRequete)) :
 <div>Frais de port : <?php echo $donnees->shipping_ht;?>€</div>
 <div>En stock : <?php echo $donnees->stock;?></div>
 <div>Vendeur : <?php echo $donnees->seller_name;?></div>
-<div>Catégorie(s) : <?php echo $donnees->category_name;?></div>
+
 
 </div>
 <?php
     endwhile;
 endif;
-?>
 
-<?php include('../footer.php'); ?>
+$maRequete2 ="SELECT categories.category_name FROM categories
+INNER JOIN categories_products ON categories_products.category_name = categories.category_name
+INNER JOIN products ON products.code_ean_13 = categories_products.code_ean_13
+WHERE product_name='$products' ";
+
+if ($result = $mysqli->query($maRequete2)) : 
+    while ($donnees = $result->fetch_object()) :
+?>
+<div>Catégorie : <?php echo $donnees->category_name;?></div>
+<?php
+    endwhile;
+endif;
+include('../footer.php'); ?>
 </body>
 </html>
